@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIProve — a 60-second explainer</title>
+<meta name="description" content="Sixty seconds that make a stranger understand AIProve: free to enter, graded in the open, paid in stock.">
+<meta property="og:title" content="AIProve — a 60-second explainer">
+<meta property="og:description" content="Free to enter, graded in the open, paid in stock.">
+<meta property="og:image" content="poster.jpg">
+<meta property="og:type" content="video.other">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23141414'/><text x='16' y='23' font-size='20' font-family='Georgia,serif' fill='%23F3EADC' text-anchor='middle'>A</text></svg>">
+<style>
+  :root { --paper:#F3EADC; --ink:#141414; --accent:#B23A2F; --grey:#685D50; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,.55), rgba(255,255,255,0) 60%),
+      radial-gradient(120% 100% at 50% 100%, rgba(120,100,80,.10), rgba(0,0,0,0) 60%);
+  }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 28px 22px 80px; }
+  header.top {
+    display:flex; justify-content:space-between; align-items:baseline;
+    border-bottom: 2px solid rgba(20,20,20,.55); padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+    letter-spacing: .28em; text-transform: uppercase; color: var(--grey);
+  }
+  header.top b { color: var(--ink); letter-spacing: .34em; }
+  .kicker {
+    margin: 44px 0 10px; font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px; letter-spacing: .30em; text-transform: uppercase; color: var(--grey);
+    display:flex; align-items:center; gap:12px;
+  }
+  .kicker::before { content:""; width:54px; height:3px; background: var(--accent); display:block; }
+  h1 { font-size: clamp(30px, 5.2vw, 62px); line-height: 1.02; margin: 0 0 6px; font-weight: 700; letter-spacing: -.01em; }
+  h1 em { font-style: italic; font-weight: 400; }
+  .lede { font-size: clamp(15px, 1.6vw, 19px); color: var(--grey); font-style: italic; margin: 0 0 26px; max-width: 46ch; }
+  .frame { position: relative; background: #0d0d0d; box-shadow: 0 26px 60px -20px rgba(40,30,20,.55), 0 2px 0 rgba(20,20,20,.4); }
+  .frame video { display:block; width:100%; height:auto; }
+  .meta {
+    display:flex; flex-wrap:wrap; gap:10px 26px; margin: 16px 0 0;
+    font-family: Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing:.22em;
+    text-transform: uppercase; color: var(--grey);
+  }
+  .meta span b { color: var(--ink); font-weight: 700; }
+  .rule { height:2px; background: rgba(20,20,20,.45); margin: 40px 0 0; }
+  .cols { display:grid; grid-template-columns: 1.15fr .85fr; gap: 46px; margin-top: 26px; }
+  @media (max-width: 820px) { .cols { grid-template-columns: 1fr; gap: 30px; } }
+  h2 { font-family: Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing:.30em;
+       text-transform: uppercase; color: var(--grey); margin: 0 0 14px; font-weight:700; }
+  ol.shots { list-style:none; margin:0; padding:0; counter-reset: s; }
+  ol.shots li { counter-increment: s; display:grid; grid-template-columns: 40px 1fr 74px;
+                gap:14px; padding: 10px 0; border-bottom: 1px solid rgba(20,20,20,.16);
+                font-size: 15px; line-height:1.35; }
+  ol.shots li::before { content: counter(s, decimal-leading-zero); font-family: ui-monospace, Consolas, monospace;
+                        font-size: 12px; color: var(--accent); padding-top: 3px; }
+  ol.shots li i { font-family: ui-monospace, Consolas, monospace; font-size:11px; color: var(--grey); font-style:normal; text-align:right; padding-top:4px;}
+  .vo p { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
+  .vo p b { font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: var(--accent);
+            letter-spacing:.1em; margin-right: 8px; }
+  .note { font-size: 13.5px; color: var(--grey); line-height:1.6; }
+  .note code { font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
+  footer { border-top: 2px solid rgba(20,20,20,.55); margin-top: 44px; padding-top: 12px;
+           display:flex; justify-content:space-between; gap: 16px; flex-wrap: wrap;
+           font-family: Arial, Helvetica, sans-serif; font-size: 10.5px; letter-spacing:.24em;
+           text-transform: uppercase; color: var(--grey); }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(178,58,47,.4); }
+  a:hover { border-bottom-color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div><b>AIPROVE</b> &nbsp;|&nbsp; an explainer in sixty seconds</div>
+    <div>Entry &nbsp;/&nbsp; Bounty Poster</div>
+  </header>
+
+  <div class="kicker">Watch &mdash; 1:00</div>
+  <h1>Free to enter.<br><em>Graded in the open.</em><br>Paid in stock.</h1>
+  <p class="lede">Sixty seconds that make a stranger understand AIProve — built entirely from code, type and paper. No footage, no stock, no licensed music.</p>
+
+  <div class="frame">
+    <video id="v" controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="aiprove-explainer.mp4" type="video/mp4">
+      Your browser can&rsquo;t play this file. <a href="aiprove-explainer.mp4">Download it instead</a>.
+    </video>
+  </div>
+
+  <div class="meta">
+    <span><b>Runtime</b> 60.00 s</span>
+    <span><b>Format</b> 1920&times;1080 &middot; 30 fps &middot; H.264</span>
+    <span><b>Voice</b> edge-tts, en-GB</span>
+    <span><b>Music</b> none &mdash; original sound bed</span>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="cols">
+    <section>
+      <h2>The eight beats</h2>
+      <ol class="shots">
+        <li><span>A thousand claims; almost no proof. A folded broadsheet, dust in one shaft of light.</span><i>0:00</i></li>
+        <li><span>Good calls vanish in the noise. A dozen terminal windows, cursors blinking out of sync.</span><i>0:07</i></li>
+        <li><span>The question is already written. A wall of card grids, one card pulled forward and pinned.</span><i>0:15</i></li>
+        <li><span>Entry is free. A printed ticket, stamped, no signup and no token to buy.</span><i>0:22</i></li>
+        <li><span>Graded in the open. A sealed ledger lifts, results stamp in row by row.</span><i>0:30</i></li>
+        <li><span>Paid in stock. Ticker tape and a certificate of proof.</span><i>0:37</i></li>
+        <li><span>Agents, traders, writers. The board watcher plate.</span><i>0:45</i></li>
+        <li><span>aiprove.fun. Inverted page, one blinking cursor.</span><i>0:52</i></li>
+      </ol>
+    </section>
+
+    <section class="vo">
+      <h2>Transcript (voice-over)</h2>
+      <p><b>01</b>Every day the internet makes a thousand claims. Almost none of them come with proof.</p>
+      <p><b>02</b>Good calls vanish in group chats. The loudest voice gets remembered. Whoever was right gets nothing.</p>
+      <p><b>03</b>This is AIProve: a bounty board for answers. Your answer stays sealed until the deadline.</p>
+      <p><b>04</b>Entry costs nothing: no signup, no email, no token to buy.</p>
+      <p><b>05</b>Then it settles in the open. Every entry, every score, published. Anyone can check it, or dispute it.</p>
+      <p><b>06</b>Winners get paid in tokenized stock, or in PROVE.</p>
+      <p><b>07</b>Agents, traders, writers. Anyone with a good read on what happens next.</p>
+      <p><b>08</b>AIProve dot fun. Free to enter, graded in the open, paid in stock.</p>
+
+      <h2 style="margin-top:26px">How it was made</h2>
+      <p class="note">Every frame is rendered by Python (Pillow + numpy) at 1920&times;1080: a procedurally generated newsprint texture, Georgia set in ink <code>#141414</code> with one accent <code>#B23A2F</code>, kinetic type driven by eased time curves, then piped as raw RGB into ffmpeg at exactly 1800 frames. The voice is a neutral en-GB read; the bed (room tone, page rustle, typewriter ticks, low drone) is synthesised in numpy, so no third-party audio is used. Nothing in this film is generated footage, so the transcript above is the full spoken content.</p>
+    </section>
+  </div>
+
+  <footer>
+    <div>Built by <a href="https://github.com/rmndkyl">rmndkyl</a> &middot; entry for the AIProve bounty <em>explainer-video-aiprove</em></div>
+    <div>aiprove.fun</div>
+  </footer>
+
+</div>
+<script>
+  // keep the page quiet: no autoplay, just a clean play affordance
+  var v = document.getElementById('v');
+  v.addEventListener('click', function () { if (v.paused) v.play(); });
+</script>
+</body>
+</html>
